@@ -9,3 +9,7 @@ This project is part of [Udacity](https://www.udacity.com "Udacity - Be in deman
 ## Challenges
 - I couldn't figure out on time why the waypoints were not teleporting in the game view.
 - I also had a bit of challenge in the script, most especially the key script.
+
+## Resources
+- https://www.youtube.com/watch?v=3khBcfXH__c
+- https://docs.unity3d.com/Manual/index.html
