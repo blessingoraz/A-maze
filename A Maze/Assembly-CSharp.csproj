@@ -167,7 +167,6 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
-     <Compile Include="Assets\UdacityVR\Scenes\RotateCoin.cs" />
      <Compile Include="Assets\UdacityVR\Scripts\Coin.cs" />
      <Compile Include="Assets\UdacityVR\Scripts\DieAfterSeconds.cs" />
      <Compile Include="Assets\UdacityVR\Scripts\Door.cs" />

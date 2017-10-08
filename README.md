@@ -5,3 +5,7 @@ This project is part of [Udacity](https://www.udacity.com "Udacity - Be in deman
 ## Versions
 - Unity 2017.1.0p4
 - GVR Unity SDK v1.70.0
+
+## Challenges
+- I couldn't figure out on time why the waypoints were not teleporting in the game view.
+- I also had a bit of challenge in the script, most especially the key script.

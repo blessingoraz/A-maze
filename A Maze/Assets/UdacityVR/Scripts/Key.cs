@@ -5,8 +5,12 @@ using UnityEngine;
 public class Key : MonoBehaviour 
 {
     //Create a reference to the KeyPoofPrefab and Door
-	public GameObject keyPoofPrefab;
+	public GameObject keyPoof;
+	public GameObject key;
 	public Door door;
+
+	float xPosition;
+	float zPosition;
 
 	void Update()
 	{
@@ -16,14 +20,20 @@ public class Key : MonoBehaviour
 	public void OnKeyClicked()
 	{
         // Instatiate the KeyPoof Prefab where this key is located
-		Object.Instantiate (keyPoofPrefab, new Vector3 (2, 4, 6), Quaternion.identity);
         // Make sure the poof animates vertically
-
         // Call the Unlock() method on the Door
-		door.Unlock();
         // Set the Key Collected Variable to true
         // Destroy the key. Check the Unity documentation on how to use Destroy
-		Destroy(keyPoofPrefab);
+
+		xPosition = key.transform.position.x;
+		zPosition = key.transform.position.z;
+
+		Object.Instantiate(keyPoof, new Vector3(xPosition, 0, zPosition), Quaternion.Euler(-90, 0, 0));
+
+		//unlock the door
+		door.Unlock();
+
+		Destroy(key);
     }
 
 }
