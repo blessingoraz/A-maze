@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GoogleVR/Scripts/UI/GvrReticlePointer.cs">
     <Files>
-      <File FileName="Assets/GoogleVR/Scripts/UI/GvrReticlePointer.cs" Line="38" Column="47" />
-      <File FileName="Assets/UdacityVR/Scripts/Waypoint.cs" Line="39" Column="26" />
+      <File FileName="Assets/GoogleVR/Scripts/UI/GvrReticlePointer.cs" Line="10" Column="31" />
+      <File FileName="Assets/UdacityVR/Scripts/Waypoint.cs" Line="57" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
