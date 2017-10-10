@@ -6,11 +6,7 @@ public class Key : MonoBehaviour
 {
     //Create a reference to the KeyPoofPrefab and Door
 	public GameObject keyPoof;
-	public GameObject key;
 	public Door door;
-
-	float xPosition;
-	float zPosition;
 
 	void Update()
 	{
@@ -25,15 +21,13 @@ public class Key : MonoBehaviour
         // Set the Key Collected Variable to true
         // Destroy the key. Check the Unity documentation on how to use Destroy
 
-		xPosition = key.transform.position.x;
-		zPosition = key.transform.position.z;
 
-		Object.Instantiate(keyPoof, new Vector3(xPosition, 0, zPosition), Quaternion.Euler(-90, 0, 0));
+		Object.Instantiate(keyPoof, transform.position, Quaternion.Euler(-90, 0, 0));
 
 		//unlock the door
 		door.Unlock();
 
-		Destroy(key);
+		Destroy(gameObject);
     }
 
 }
