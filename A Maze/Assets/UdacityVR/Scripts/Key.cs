@@ -7,10 +7,12 @@ public class Key : MonoBehaviour
     //Create a reference to the KeyPoofPrefab and Door
 	public GameObject keyPoof;
 	public Door door;
+	bool hasKey = false;
 
 	void Update()
 	{
 		//Not required, but for fun why not try adding a Key Floating Animation here :)
+		transform.Rotate(0, 0, 1);
 	}
 
 	public void OnKeyClicked()
@@ -22,7 +24,8 @@ public class Key : MonoBehaviour
         // Destroy the key. Check the Unity documentation on how to use Destroy
 
 
-		Object.Instantiate(keyPoof, transform.position, Quaternion.Euler(-90, 0, 0));
+		Instantiate(keyPoof, transform.position, Quaternion.Euler(-90, 0, 0));
+		hasKey = true;
 
 		//unlock the door
 		door.Unlock();
